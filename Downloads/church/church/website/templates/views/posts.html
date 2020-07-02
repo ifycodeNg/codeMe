@@ -1,0 +1,38 @@
+{% include "views/partial/header.html" %}
+
+ <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+              {% if posts %}
+
+              <h2 class="mb-3">{{ posts.title }} </h2>
+              <h3>- {{posts.date}}</h3>
+
+            {% endif %}
+
+              
+      </div>
+    </div>
+          <article>
+    <div class="container">
+      <div class="row">
+
+          <img src="{{posts..url}} ">
+        <div class="col-lg-8 col-md-10 mx-auto">
+        </p class="mb-4">{{posts.description |safe}}</p>
+        </div>
+      </div>
+    </div>
+    </article>
+
+</div>
+
+
+
+</div>
+
+
+
+
+{% include "views/partial/footer.html" %}
